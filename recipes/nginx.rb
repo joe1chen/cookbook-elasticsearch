@@ -47,3 +47,7 @@ if node.recipes.include?('monit') and respond_to?(:monitrc)
     source 'nginx.monitrc.conf.erb'
   end
 end
+
+file "#{node[:nginx][:dir]}/sites-enabled/default" do
+  action :delete
+end
