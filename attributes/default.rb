@@ -89,6 +89,9 @@ default.elasticsearch[:thread_stack_size] = "256k"
 
 default.elasticsearch[:env_options] = ""
 
+default.elasticsearch[:script][:disable_dynamic] = true
+
+
 # === OTHER SETTINGS
 #
 default.elasticsearch[:skip_restart] = false
